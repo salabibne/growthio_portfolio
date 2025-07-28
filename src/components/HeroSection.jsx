@@ -2,37 +2,33 @@ const HeroSection = () => {
   return (
     <div
       className="
-        min-h-[500px] sm:min-h-[600px] md:min-h-[700px] 
+        min-h-[300px] sm:min-h-[300px] md:min-h-[700px] 
         mt-[120px] sm:mt-[100px] md:mt-[100px]
         bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
         px-4 sm:px-8 md:px-16
       "
     >
-      <div className="flex flex-col items-start justify-center h-full ">
+      <div className="flex flex-col items-start justify-center h-full  sm:mt-2 md:mt-6 mt-6">
         <h1
           className="
-            text-4xl sm:text-6xl md:text-7xl lg:text-9xl
+             text-5xl sm:text-6xl md:text-7xl lg:text-9xl
             font-extrabold
-            p-4 sm:p-6 md:p-8 lg:p-10
             bg-gradient-to-r from-white via-purple-100 to-pink-100
             bg-clip-text text-transparent
-            drop-shadow-md
+            drop-shadow-md  md:mt-16 mt-16 mb-2
           "
         >
           A Legacy of
         </h1>
         <h1
           className="
-            text-4xl sm:text-6xl md:text-7xl lg:text-9xl
+            text-5xl sm:text-6xl md:text-7xl lg:text-9xl
             font-extrabold
-            px-4 sm:px-6 md:px-8 lg:px-10
-            pb-4 sm:pb-6 md:pb-8 lg:pb-10
             bg-gradient-to-r from-white via-purple-100 to-pink-100
             bg-clip-text text-transparent
             drop-shadow-md
           "
         >
-          {/* <span className="text-cyan-200">Engineering </span>Excellence */}
           <span className="text-cyan-200">Engineering </span>Excellence
         </h1>
       </div>

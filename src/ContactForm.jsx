@@ -18,7 +18,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className=" w-[85%] mx-auto bg-gradient-to-r from-neutral-800 to-blue-950 text-white px-10 py-16 flex flex-col lg:flex-row items-start justify-between gap-12 mt-12">
+    <div className=" rounded-md w-[85%] mx-auto bg-gradient-to-r from-neutral-800 to-blue-950 text-white px-10 py-16 flex flex-col lg:flex-row items-start justify-between gap-12 mt-12">
       
       {/* Left Section - Steps */}
       <div className="w-full lg:w-1/2 space-y-8">

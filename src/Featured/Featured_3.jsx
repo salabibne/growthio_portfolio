@@ -95,18 +95,18 @@ const Featured_3 = () => {
     <FeatureComponent
       image={img_f_3}
       headline={`Build custom mobile apps faster with intuitive drag-and-drop tools
-//             and deploy across platforms effortlessly`}
+             and deploy across platforms effortlessly`}
       texts={`Launch powerful mobile applications without writing complex code
-//             using our Custom Mobile App Builder. Designed for startups,
-//             enterprises, and agencies, this platform empowers teams to
-//             prototype, build, and deploy apps with ease — using visual
-//             components, pre-built templates, and real-time previews. Integrate
-//             backend services, authentication, payments, and notifications
-//             seamlessly through modular APIs. Whether you're targeting Android,
-//             iOS, or both, our builder ensures cross-platform compatibility and
-//             scalability from day one. Reduce development time, lower costs, and
-//             bring your app ideas to life faster — all without compromising
-//             performance or user experience.`}
+             using our Custom Mobile App Builder. Designed for startups,
+           enterprises, and agencies, this platform empowers teams to
+          prototype, build, and deploy apps with ease — using visual
+             components, pre-built templates, and real-time previews. Integrate
+             backend services, authentication, payments, and notifications
+             seamlessly through modular APIs. Whether you're targeting Android,
+             iOS, or both, our builder ensures cross-platform compatibility and
+             scalability from day one. Reduce development time, lower costs, and
+             bring your app ideas to life faster — all without compromising
+             performance or user experience.`}
 reverse={true}
 bg={`bg-gradient-to-r from-gray-800 to-green-700 hover:from-violet-800 hover:to-stone-800`}
     />

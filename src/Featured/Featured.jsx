@@ -37,7 +37,7 @@ import Featured_5 from "./Featured_5";
 const Featured = () => {
   return (
     <div className="min-h-screen flex flex-col gap-y-10 px-4 md:px-10 lg:px-20 py-12">
-      <div className="md:ml-auto md:w-[70%] w-full">
+      <div className="md:ml-auto md:w-[70%] w-full ">
         <Featured_1 />
       </div>
       <div className="md:mr-auto md:w-[70%] w-full">

@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 // Adjust the path as necessary
 const Footer = () => {
   return (
-    <footer className="bg-[#0b1120] text-white px-10 py-16 mt-12">
+    <footer className="bg-[#0b1120] text-white px-10 py-16 mt-12 rounded-md">
       <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row lg:justify-between gap-10">
         {/* Headquarters Info */}
         <div className="lg:w-1/5">
