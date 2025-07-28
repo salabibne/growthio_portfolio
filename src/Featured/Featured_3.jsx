@@ -46,7 +46,7 @@
 // export default Featured_1;
 
 import { Card } from "antd";
-import img_f_3 from "../assets/3.jpg";
+import img_f_3 from "../assets/mobile application.jpg";
 
 // const Featured_3 = () => {
 //   return (

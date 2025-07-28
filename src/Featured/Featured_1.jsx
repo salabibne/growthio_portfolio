@@ -45,7 +45,7 @@
 // export default Featured_1;
 
 import { Card } from "antd";
-import img_f_1 from "../assets/1.jpg";
+import img_f_1 from "../assets/automate complex workflows.jpg";
 
 // const Featured_1 = () => {
 //   return (

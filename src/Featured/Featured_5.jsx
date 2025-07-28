@@ -46,7 +46,7 @@
 // export default Featured_1;
 
 import { Card } from "antd";
-import img_f_5 from "../assets/5.jpg";
+import img_f_5 from "../assets/datasceince.jpg";
 
 // const Featured_5 = () => {
 //   return (
