@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Projects from "./projects/Projects";
 
 export default function App() {
 
@@ -24,12 +25,8 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/projects" element={<Projects />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/case-studies" element={<CaseStudies />} />
-        <Route path="/testimonials" element={<Testimonials />} /> */}
+       <Route path="/projects" element={<Projects />} /> 
+        
        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>

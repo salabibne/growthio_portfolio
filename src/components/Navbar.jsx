@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import { DownOutlined,MoreOutlined } from "@ant-design/icons";
 import { Menu, Button } from "antd";
 import logo from "../assets/growthio_remove bg.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [current, setCurrent] = useState("services");
   const [menuKey, setMenuKey] = useState(Date.now());
   const [menuReady, setMenuReady] = useState(false); // Delay mount
+  const navigate = useNavigate();
 
   // Force re-render when tab becomes visible
   useEffect(() => {
@@ -60,8 +62,8 @@ const Navbar = () => {
       ],
     },
     {
-      label: "Case Studies",
-      key: "case-studies",
+      label: "Projects",
+      key: "projects",
       // style: {
        
       //   color: "white",
