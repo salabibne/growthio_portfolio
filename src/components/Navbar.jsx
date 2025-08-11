@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { DownOutlined,MoreOutlined } from "@ant-design/icons";
+import { DownOutlined, MoreOutlined } from "@ant-design/icons";
 import { Menu, Button } from "antd";
 import logo from "../assets/growthio_remove bg.png";
 import { useNavigate } from "react-router-dom";
@@ -30,8 +30,28 @@ const Navbar = () => {
     return () => clearTimeout(timeout);
   }, []);
 
+
+
+  const routeMap = {
+    projects: "/projects",
+    team: "/team",
+    services: "/services",
+    "about-us": "/about",
+    insights: "/insights",
+    careers: "/careers",
+    story: "/story",
+    "blog-articles": "/blog",
+    whitepapers: "/whitepapers",
+    tutorials: "/tutorials",
+    webinars: "/webinars",
+    docs: "/docs",
+    contact: "/contact",
+  };
+
   const onClick = (e) => {
     setCurrent(e.key);
+    const path = routeMap[e.key];
+    if (path) navigate(path);
   };
 
   const menuItems = [
@@ -65,27 +85,14 @@ const Navbar = () => {
       label: "Projects",
       key: "projects",
       // style: {
-       
+
       //   color: "white",
       // }
     },
     {
-      label: (
-        <span style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-          About Us <DownOutlined style={{ fontSize: "10px" }} />
-        </span>
-      ),
-      key: "about-us",
-      children: [
-        {
-          type: "group",
-          label: "Company",
-          children: [
-            { label: "Our Story", key: "story" },
-            { label: "Careers", key: "careers" },
-          ],
-        },
-      ],
+      label: "Our Team",
+      key: "team",
+     
     },
     {
       label: (
@@ -95,6 +102,14 @@ const Navbar = () => {
       ),
       key: "insights",
       children: [
+         {
+          type: "group",
+          label: "Company",
+          children: [
+            { label: "Our Story", key: "story" },
+            { label: "Careers", key: "careers" },
+          ],
+        },
         {
           type: "group",
           label: "Resources",
@@ -119,9 +134,14 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-50 px-6 py-6 shadow-md flex items-center justify-between gap-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
       {/* Left: Logo + Company Name */}
-      <div className="flex items-center gap-2 flex-shrink-0">
+      <div
+        onClick={() => navigate("/")}
+        className="flex items-center gap-2 flex-shrink-0 cursor-pointer"
+      >
         <img src={logo} alt="logo" className="h-20 w-20 object-contain" />
-        <span className="font-bold text-lg whitespace-nowrap">Growth.IO</span>
+        <span className="font-bold text-lg whitespace-nowrap text-black">
+          Growth.IO
+        </span>
       </div>
 
       {/* Center: Menu */}
@@ -133,9 +153,10 @@ const Navbar = () => {
             selectedKeys={[current]}
             mode="horizontal"
             items={menuItems}
-           overflowedIndicator={<MoreOutlined style={{ fontSize: "20px", color: "Black" }} />}
+            overflowedIndicator={
+              <MoreOutlined style={{ fontSize: "20px", color: "Black" }} />
+            }
             className="w-full border-none justify-center text-3xl"
-            
             style={{
               minWidth: 0,
               flex: 1,
@@ -144,8 +165,6 @@ const Navbar = () => {
               backgroundColor: "transparent",
               fontSize: "16px",
               fontWeight: "500",
-             
-              
             }}
           />
         )}
@@ -157,16 +176,13 @@ const Navbar = () => {
           type="primary"
           className="bg-black hover:bg-gray-800 border-black hover:border-gray-800 font-semibold"
           size="large"
+          onClick={() => navigate("/contact")}
         >
           Contact Us
         </Button>
       </div>
-      
     </div>
   );
 };
 
 export default Navbar;
-
-
-

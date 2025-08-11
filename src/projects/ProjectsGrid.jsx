@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectsCard";
-import img1 from '/src/assets/sicoarenaAllService.png';
-import img2 from '/src/assets/test.png';
+import img1 from '../assets/sicoarenaAllService.png';
+import img2 from '../assets/sicoarenaAllService.png';
+
 
 const projects = [
   {
