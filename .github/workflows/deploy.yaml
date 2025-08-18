@@ -1,0 +1,10 @@
+name: "Deploy to AWS"
+
+on:
+    push:
+        branches:
+            - build
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
